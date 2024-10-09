@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta cha rset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy construction LLC.</title>
+    <!--link any outside files like CSS or Js or external API CDN links-->
+    <!--<link rel="stylesheet" href="style.css"-->
+    <!--link rel="shortcut icon" href="favicon.ico" type="image/xicon"-->
+    <!--script src="../js/script.js"></script-->
+  </head>
+  <body>
+    <!-- Division for the title-->
+    <header>
+      <div>
+        <h1>Title</h1>
+        <h2>This is my subtitle</h2>
+      </div>
+
+      <!--navigation menu-->
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#menu-item-about">About</a></li>
+          <li><a href="./html/semantic-html-example.html">Products</a></li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--division for overview para-->
+      <div>
+        <h3>Overview</h3>
+        <span>this is a statement inside an inline tag</span>
+        <span>this is a 2nd statment inside an inline tag</span>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt hic
+          dolor eligendi dignissimos corporis quia, debitis facilis, laudantium
+          libero dicta est soluta! Quo atque consequatur iusto accusamus,
+          numquam hic blanditiis.
+        </p>
+      </div>
+
+      <!--division for significance para-->
+      <div class="container-element">
+        <h3>Sigificance</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum
+          accusantium architecto deserunt veniam exercitationem blanditiis
+          molestias unde excepturi, reprehenderit magni aliquid explicabo
+          suscipit reiciendis praesentium asperiores dicta quo quam saepe!
+        </p>
+      </div>
+
+      <!--image embedding, hyperrenferencing, lists, multimedia files, table data -->
+      <!--html attributes - id, class, src, href, alt -->
+      <!-- insert an img in html doc -->
+      <div>
+        <!--self closing html tags-->
+        <img
+          src="./assets/img/christmas.jpg"
+          alt="this is an image of 2 christmas mugs"
+          width="200px"
+          height="100px"
+        />
+
+        <hr />
+        <br />
+
+        <!--html lists: 1. orderedlist. 2.unordered list-->
+        <!--ordered list-->
+        <ol>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            aspernatur commodi exercitationem at sint fugiat soluta officia
+            consequatur animi repellat. Quidem, saepe quasi. Illo praesentium
+            reprehenderit saepe, modi inventore voluptas!
+          </li>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+            quidem id veritatis amet esse officia doloremque, magnam aut eius
+            illum recusandae possimus odio, praesentium omnis dolorem iure.
+            Fugit, ad officiis?
+          </li>
+          <li>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
+            praesentium eligendi, animi quas quod incidunt, alias reprehenderit
+            iusto dolor sint ut consectetur voluptate eaque, quam reiciendis
+            molestias quibusdam eum dolorum!
+          </li>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            ipsum iure esse culpa. Explicabo ut quae nisi dolor sapiente autem
+            soluta iste debitis saepe laboriosam! Iusto perferendis corrupti
+            ipsam deserunt.
+          </li>
+        </ol>
+
+        <br />
+        <hr />
+
+        <!--About menu item should navigate to this unordered list-->
+        <ul id="menu-item-about">
+          <li>item1</li>
+          <li>item2</li>
+          <li>item3</li>
+          <li>item4</li>
+        </ul>
+
+        <br />
+        <hr />
+
+        <!--hypereferencing using anchor tags -->
+        <a href="http://www.oakland.edu">Click here </a
+        ><span>to visit OU home page</span>
+        <a href="=mailto:sen@oakland.edu">Email Prof Sen</a>
+
+        <hr />
+        <br />
+
+        <!--multimedia files audio and video-->
+        <audio src="./assets/audio/guitar riff.mp3" controls>
+          <!--source arc="" type></source>-->
+          Your browser does not support the video format
+        </audio>
+
+        <video
+          src="./assets/video/file_example_MOV_1280_1_4MB.mov"
+          width="200"
+          height="200"
+          controls
+        >
+          Your browser does not support the video format
+        </video>
+
+        <br />
+        <hr />
+
+
+        <!-- to create tabular content -->
+        <table border="10">
+          <thead>
+            <tr>
+              <th>First</th>
+              <th>Last</th>
+              <th>GPA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Wick</td>
+              <td>3.79</td>
+            </tr>
+            <tr>
+              <td>Jane</td>
+              <td>Doe</td>
+              <td>3.89</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>GPA Avg</td>
+              <td></td>
+              <td>3.84</td>
+            </tr>
+          </tfoot>
+        
+          <!-- IMPORTANT SECTION -->
+           <!-- getting input from users -->
+            <!-- html forms > input fields -->
+
+            <!-- form elem -->
+             <form action="#" method="get">
+              <!-- fields to take input-->
+               <label for="user-email">Enter your Email:</label>
+              <input placeholder="abc@email.com"
+               type="email"
+               name="user-email"  
+               id="user-email" 
+              />
+               <br />
+               <label for="user-password">Enter your Password:</label>
+               <input type="password" name="user-password" id="user-password" />
+               <br />
+              <input
+              type="checkbox"
+              name="test-checkbox"
+              value="Coffee"
+              id="test-checkbox"
+              />
+              <label for="test-checkbox">Coffee</label>
+              <br />
+               <button type="submit">submit</button>
+               <!-- <button type="reset"><button> -->
+             </form>
+
+             <section class="input-tutorials">
+              <!-- tutorial for radio btns -->
+               <!-- present multiple options select only one -->
+                <!-- the name attributes for all radio options are the same
+                 calue and if is different
+                 -->
+                <p>Select more than one programming language</p>
+                <input type="checkbox" name="python" id="python" value="python" />
+                <label for="python">Python</label> <br />
+                <input type="checkbox" name="java" id="java" value="java" />
+                <label for="java">Java</label> <br />
+                <input type="checkbox" name="js" id="js" value="js" />
+                <label for="js">JS</label> <br />
+
+                <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id illum iure architecto veritatis reprehenderit iusto tempora quisquam, reiciendis eligendi dolorem autem minima corporis numquam ex quia amet temporibus facilis aperiam.
+                </div>
+                
+                <div>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates unde rerum facilis similique vero ad culpa, placeat laboriosam tempora quis vel, nesciunt vitae labore veritatis fuga ducimus hic sunt reiciendis?
+                </div>
+                <hr><br>
+                <!-- the select from multiple options input type -->
+                 <!-- select and option-->
+                  <label for="states">Choose your midwest state</label>
+                  <select name="" id=""></select>
+
+
+                </section>
+
+                <!-- present multiple options , user can select multiple options -->
+                 <!-- the name attrivutes for all checkbox options are different along with 
+                   value and id is different
+                   -->
+
+            
+          
+      
+    </main>
+    <footer>test content here</footer>
+  </body>
+</html>
